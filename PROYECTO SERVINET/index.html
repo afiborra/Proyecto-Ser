@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+   <div class = container>
+    <h1>Gestión de Tareas</h1>
+
+    <section id="create">
+        <h2 class="title">Crear Tarea</h2></div>
+
+        <input type="text" id="taskInput" placeholder="Nueva tarea">
+        <button onclick="addTask()">Añadir</button>
+    </section>
+
+    <section id="read">
+        <h2>Read Tareas</h2>
+        <button onclick="saveTasks()">Guardar Tareas</button>
+        <button onclick="loadTasks()">Recargar Tareas</button>
+    </section>
+
+    <section id="update">
+        <h2>Update Tareas</h2>
+        <ul id="taskList"></ul>
+    </section>
+
+    <section id="delete">
+        <h2>Borrar y Resetear Tareas</h2>
+        <button onclick="resetTasks()">Resetear Tareas</button>
+    </section>
+</div> 
+    <script src="script.js"></script>
+</body>
+</html>
