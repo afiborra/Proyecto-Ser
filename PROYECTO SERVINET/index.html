@@ -7,32 +7,35 @@
     <link rel="stylesheet" href="styless.css">
 </head>
 <body>
-   <div class = container>
+   <div class="container">
     <h1>Gestión de Tareas</h1>
 
     <section id="create">
-        <h2 class="title">Crear Tarea</h2></div>
+        <h2 class="title">Añade tus Tarea</h2>
 
         <input type="text" id="taskInput" placeholder="Nueva tarea">
+        <input type="time" id="taskTime">
         <button onclick="addTask()">Añadir</button>
     </section>
 
-    <section id="read">
-        <h2>Read Tareas</h2>
-        <button onclick="saveTasks()">Guardar Tareas</button>
-        <button onclick="loadTasks()">Recargar Tareas</button>
-    </section>
+
 
     <section id="update">
-        <h2>Update Tareas</h2>
         <ul id="taskList"></ul>
     </section>
 
-    <section id="delete">
-        <h2>Borrar y Resetear Tareas</h2>
-        <button onclick="resetTasks()">Resetear Tareas</button>
+    <section id="read">
+        <h2>Tareas</h2> <!--incluyo el READ y el UPDATE-->
+        <button onclick="saveTasks()">Guardar Tareas</button>
+        <button onclick="loadTasks()">Recargar Tareas</button>
     </section>
 </div> 
+<div class="borrador">
+    <section id="delete">
+       
+        <button onclick="resetTasks()">Resetear Tareas</button>
+    </section>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
